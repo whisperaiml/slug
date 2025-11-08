@@ -13,7 +13,7 @@
     </b>
   </p>
 
-<a href="https://slug-eight-eight.vercel.app/dashboard">Dashboard</a>
+<a href="https://slug-eight.vercel.app/dashboard">Dashboard</a>
 <span>&nbsp;&nbsp;❖&nbsp;&nbsp;</span>
 <a href="#-roadmap">Roadmap</a>
 <span>&nbsp;&nbsp;❖&nbsp;&nbsp;</span>
@@ -214,7 +214,7 @@ This is the roadmap I will be following for the complete migration to v3:
 
 ## ✌️ Contributing
 
-<a href="https://github.com/whisperaiml/slug-eight-eight/graphs/contributors">
+<a href="https://github.com/whisperaiml/slug-eight/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=whisperaiml/slug-eight" />
 </a>
 
@@ -222,8 +222,8 @@ This is the roadmap I will be following for the complete migration to v3:
 
 ## ☁️ Deploy on Vercel
 
-- ✅ [slug-eight.vercel.app](https://slug-eight-eight.vercel.app/).
+- ✅ [slug-eight.vercel.app](https://slug-eight.vercel.app/).
 
 ## 🔑 License
 
-- [GPL-3.0 license](https://github.com/whisperaiml/slug-eight-eight/blob/main/LICENSE).
+- [GPL-3.0 license](https://github.com/whisperaiml/slug-eight/blob/main/LICENSE).
