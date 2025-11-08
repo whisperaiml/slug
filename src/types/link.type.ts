@@ -1,7 +1,7 @@
 export interface LinksProps {
   id: number;
   url: string;
-  slug: string;
+  slug-eight: string;
   description: string | null;
   createdAt: Date;
   creatorId: string;

@@ -3,7 +3,7 @@ import z from "zod";
 export const LinkSchema = z.object({
   id: z.number(),
   url: z.string(),
-  slug: z.string(),
+  slug-eight: z.string(),
   description: z.string().optional(),
   tagId: z.number().optional(),
 });
@@ -15,14 +15,14 @@ export const CreateLinkSchema = z.object({
     .url({
       message: "Please enter a valid URL. Include http:// or https://",
     })
-    .regex(/^(?!.*(?:http|https):\/\/(?:slug|slugr)\.vercel\.app).*$/, {
-      message: "You cannot redirect to the Slug url.",
+    .regex(/^(?!.*(?:http|https):\/\/(?:slug-eight|slug-eightr)\.vercel\.app).*$/, {
+      message: "You cannot redirect to the slug-eight url.",
     })
     // not contain any blank spaces
     .regex(/^\S+$/, {
       message: "URL must not contain any blank spaces.",
     }),
-  slug: z
+  slug-eight: z
     .string()
     .min(4, {
       message: "Short link is required and must be at least 4 characters long.",
@@ -45,14 +45,14 @@ export const EditLinkSchema = z.object({
   url: z
     .string()
     .min(1, { message: "URL is required." })
-    .regex(/^(?!.*(?:http|https):\/\/(?:slug|slugr)\.vercel\.app).*$/, {
-      message: "You cannot redirect to the Slug url.",
+    .regex(/^(?!.*(?:http|https):\/\/(?:slug-eight|slug-eightr)\.vercel\.app).*$/, {
+      message: "You cannot redirect to the slug-eight url.",
     })
     // not contain any blank spaces
     .regex(/^\S+$/, {
       message: "URL must not contain any blank spaces.",
     }),
-  slug: z
+  slug-eight: z
     .string()
     .min(4, {
       message: "Short link is required and must be at least 4 characters long.",
@@ -69,7 +69,7 @@ export const EditLinkSchema = z.object({
 });
 
 export const DeleteLinkSchema = z.object({
-  slug: z.string().min(1, { message: "Slug is required." }),
+  slug-eight: z.string().min(1, { message: "slug-eight is required." }),
 });
 
 export const getSingleLinkSchema = z.object({

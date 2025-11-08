@@ -45,11 +45,11 @@ const CardLink = ({ linkInfo, linkTags, tagsInfo }: CardLinkProps) => {
     <div className="flex w-full flex-col rounded-md border border-neutral-200 p-3 shadow-sm dark:border-neutral-800">
       <div className="mb-1 flex w-full items-center justify-between space-x-2">
         <ExternalLink
-          href={`/${linkInfo.slug}`}
+          href={`/${linkInfo.slug-eight}`}
           className="block  space-x-[1px] overflow-hidden truncate font-medium transition-opacity duration-75 hover:opacity-80"
         >
           <span className="text-sm opacity-40">/</span>
-          <span>{linkInfo.slug}</span>
+          <span>{linkInfo.slug-eight}</span>
         </ExternalLink>
         <div className="flex items-center space-x-3">
           <ShowClicks
@@ -67,7 +67,7 @@ const CardLink = ({ linkInfo, linkTags, tagsInfo }: CardLinkProps) => {
                 <CopyIcon size={15} />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <CopyLinkDropdown slug={linkInfo.slug} />
+                <CopyLinkDropdown slug-eight={linkInfo.slug-eight} />
                 <DialogTrigger asChild>
                   <DropdownMenuItem>
                     <QrCodeIcon size={15} />

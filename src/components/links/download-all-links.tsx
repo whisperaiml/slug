@@ -19,7 +19,7 @@ const DownloadAllLinks = () => {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = "slug-links.json";
+      a.download = "slug-eight-links.json";
       a.click();
       URL.revokeObjectURL(url);
       toast.success("Links exported successfully.");

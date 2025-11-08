@@ -11,7 +11,7 @@ datasource db {
 model Links {
     id          String       @id @default(cuid())
     url         String
-    slug        String       @unique
+    slug-eight        String       @unique
     description String?
     createdAt   DateTime     @default(now())
     createdBy   User?        @relation(fields: [creatorId], references: [id], onDelete: Cascade)
@@ -20,7 +20,7 @@ model Links {
     lastClicked DateTime?
     tags        LinkTags[]   
 
-    @@index(slug)
+    @@index(slug-eight)
     @@index([creatorId])
 }
 

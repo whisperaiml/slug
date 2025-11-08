@@ -38,14 +38,14 @@ const DashboardPage = async ({
   const filteredLinks = data.links.filter((link) => {
     if (!searchLink && !searchTag) return true;
 
-    // Filter links by search slug
-    const matchSlug = !searchLink || link.slug.includes(searchLink);
+    // Filter links by search slug-eight
+    const matchslug-eight = !searchLink || link.slug-eight.includes(searchLink);
 
     // Filter links by search tag
     const matchTag =
       !searchTag || link.tags.some((tag) => tag.tagId === searchTag);
 
-    return matchSlug && matchTag;
+    return matchslug-eight && matchTag;
   });
 
   return (
@@ -96,19 +96,19 @@ const DashboardPage = async ({
           {searchLink ? (
             <p>
               No links found with{" "}
-              <span className="font-mono">{searchLink}</span> slug
+              <span className="font-mono">{searchLink}</span> slug-eight
             </p>
           ) : (
             <p>
               {searchTag ? "No links found with this tag" : "No links found"}
             </p>
           )}
-          <CreateLink tags={data.tags} slug={searchLink}>
+          <CreateLink tags={data.tags} slug-eight={searchLink}>
             <Button variant="outline">
               <PlusIcon size={14} />
               <span>
                 {searchLink
-                  ? `Create a link with ${searchLink} slug`
+                  ? `Create a link with ${searchLink} slug-eight`
                   : "Create a new link"}
               </span>
             </Button>

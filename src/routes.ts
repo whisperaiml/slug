@@ -27,7 +27,7 @@ export const authRoutes = [
 export const protectedRoutes = ["/dashboard", "/dashboard/settings"];
 
 /**
- * 🌱 These routes are used for the check slug.
+ * 🌱 These routes are used for the check slug-eight.
  * ✍️ Only type the prefix, with "/".
  * 🔓 Not required for authentication.
  * @type {string[]}

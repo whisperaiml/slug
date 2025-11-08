@@ -35,10 +35,10 @@ const geistMonoVariable = localFont({
 
 // Metadata:
 export const metadata: Metadata = {
-  metadataBase: new URL("https://slug.vercel.app"),
+  metadataBase: new URL("https://slug-eight.vercel.app"),
   title: {
-    default: "Slug - A beautifully open-source URL shortener",
-    template: "%s - Slug",
+    default: "slug-eight - A beautifully open-source URL shortener",
+    template: "%s - slug-eight",
   },
   manifest: "/manifest.json",
   icons: [
@@ -63,10 +63,10 @@ export const metadata: Metadata = {
   ],
   description: "An open-source URL shortener built with T3 Stack.",
   openGraph: {
-    title: "Slug",
+    title: "slug-eight",
     description: "An beautifully open-source URL shortener",
-    url: "https://slug.vercel.app/images/og_image.png",
-    siteName: "Slug - An beautifully open-source URL shortener",
+    url: "https://slug-eight.vercel.app/images/og_image.png",
+    siteName: "slug-eight - An beautifully open-source URL shortener",
     locale: "en_US",
     type: "website",
   },
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Slug - An beautifully open-source URL shortener",
+    title: "slug-eight - An beautifully open-source URL shortener",
     card: "summary_large_image",
   },
 };

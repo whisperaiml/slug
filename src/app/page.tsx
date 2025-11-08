@@ -18,7 +18,7 @@ export default async function Home() {
           Enhance Your Link Management
         </TypographyH1>
         <TypographyP className="max-w-[75ch] text-sm duration-700 animate-in fade-in-5 slide-in-from-top-2 md:text-base [&:not(:first-child)]:mt-6">
-          Slug is an open-source platform that allows you to create, manage, and
+          slug-eight is an open-source platform that allows you to create, manage, and
           share short links with ease. It's fast, secure, and easy to use.
         </TypographyP>
         <div className="mt-8 flex items-center justify-center duration-700 animate-in fade-in-30 md:space-x-3 space-x-2">
@@ -37,7 +37,7 @@ export default async function Home() {
             <span>Create a Link</span>
           </Link>
           <ExternalLink
-            href="https://github.com/whisperaiml/slug"
+            href="https://github.com/whisperaiml/slug-eight"
             className={buttonVariants({
               variant: "expandIcon",
               size: "lg",

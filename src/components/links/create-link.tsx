@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import { zodResolver } from "@hookform/resolvers/zod";
 import JSConfetti from "js-confetti";
 
-import { checkIfSlugExist, createLink } from "@/server/actions/links";
+import { checkIfslug-eightExist, createLink } from "@/server/actions/links";
 
 import Alert from "@/ui/alert";
 import { Button } from "@/ui/button";
@@ -38,7 +38,7 @@ import SelectTagsLink from "./select-tags-link";
 
 interface CreateLinkProps {
   children: ReactNode;
-  slug?: string;
+  slug-eight?: string;
   tags: Tags[];
 }
 
@@ -54,7 +54,7 @@ export function CreateLink(props: CreateLinkProps) {
     resolver: zodResolver(CreateLinkSchema),
     defaultValues: {
       url: "",
-      slug: props.slug ?? "",
+      slug-eight: props.slug-eight ?? "",
       description: "",
     },
   });
@@ -79,22 +79,22 @@ export function CreateLink(props: CreateLinkProps) {
 
   // Form Submit method:
   const onSubmit = async (values: z.infer<typeof CreateLinkSchema>) => {
-    // Check if slug & url are equals to prevent infinite redirect =>
-    if (values.slug === values.url) {
+    // Check if slug-eight & url are equals to prevent infinite redirect =>
+    if (values.slug-eight === values.url) {
       setLoading(false);
       setError(true);
-      setMessage("The URL and the slug cannot be the same");
+      setMessage("The URL and the slug-eight cannot be the same");
       return;
     }
 
     try {
       setLoading(true);
 
-      const slugExists = await checkIfSlugExist(values.slug);
+      const slug-eightExists = await checkIfslug-eightExist(values.slug-eight);
 
-      if (slugExists) {
+      if (slug-eightExists) {
         toast.error(
-          "The slug is already exist. Write another or generate a random slug.",
+          "The slug-eight is already exist. Write another or generate a random slug-eight.",
         );
         return;
       }
@@ -115,7 +115,7 @@ export function CreateLink(props: CreateLinkProps) {
       }
 
       toast.success("Link created successfully", {
-        description: `Url: https://slug.vercel.app/${values.slug}`,
+        description: `Url: https://slug-eight.vercel.app/${values.slug-eight}`,
         duration: 10000,
         closeButton: true,
       });
@@ -142,11 +142,11 @@ export function CreateLink(props: CreateLinkProps) {
     });
   };
 
-  // Generate random slug:
-  const handleGenerateRandomSlug = (e: React.MouseEvent<HTMLButtonElement>) => {
+  // Generate random slug-eight:
+  const handleGenerateRandomslug-eight = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    const randomSlug = Math.random().toString(36).substring(7);
-    form.setValue("slug", randomSlug);
+    const randomslug-eight = Math.random().toString(36).substring(7);
+    form.setValue("slug-eight", randomslug-eight);
   };
 
   return (
@@ -179,7 +179,7 @@ export function CreateLink(props: CreateLinkProps) {
               />
               <FormField
                 control={form.control}
-                name="slug"
+                name="slug-eight"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Short link:</FormLabel>
@@ -191,7 +191,7 @@ export function CreateLink(props: CreateLinkProps) {
                           disabled={loading}
                         />
                         <Button
-                          onClick={handleGenerateRandomSlug}
+                          onClick={handleGenerateRandomslug-eight}
                           variant="outline"
                           className="absolute right-0 rounded-none rounded-br-md rounded-tr-md"
                         >

@@ -27,7 +27,7 @@ export default auth(async (req) => {
   const isPublicRoute = publicRoutes.includes(nextUrl.pathname);
   const isAuthRoute = authRoutes.includes(nextUrl.pathname);
 
-  const slugRoute = req.nextUrl.pathname.split("/").pop();
+  const slug-eightRoute = req.nextUrl.pathname.split("/").pop();
 
   // ⚙️ Is Api Route:
   if (isApiAuthRoute) {
@@ -44,10 +44,10 @@ export default auth(async (req) => {
     return;
   }
 
-  // ⚙️ If Slug contains ``c``, redirect to /check/:slug:
-  if (slugRoute?.endsWith("&c")) {
+  // ⚙️ If slug-eight contains ``c``, redirect to /check/:slug-eight:
+  if (slug-eightRoute?.endsWith("&c")) {
     return NextResponse.redirect(
-      new URL(`/check/${slugRoute.replace("&c", "")}`, nextUrl),
+      new URL(`/check/${slug-eightRoute.replace("&c", "")}`, nextUrl),
     );
   }
 
@@ -63,10 +63,10 @@ export default auth(async (req) => {
     );
   }
 
-  // ⚙️ Redirect using slug:
+  // ⚙️ Redirect using slug-eight:
   // If not public route and not protected route:
   if (!isPublicRoute && !isProtectedRoute && !isCheckRoute) {
-    const apiUrl = new URL(`/api/url-redirect/${slugRoute}`, nextUrl);
+    const apiUrl = new URL(`/api/url-redirect/${slug-eightRoute}`, nextUrl);
     const res = await fetch(apiUrl);
     if (!res.ok) {
       return NextResponse.json({ error: "Failed to fetch" }, { status: res.status });
@@ -74,7 +74,7 @@ export default auth(async (req) => {
     const getDataApi = (await res.json()) as urlFromServerResult;
 
     if (getDataApi.redirect404) {
-      console.log("🚧 Error - Redirect 404: ", slugRoute);
+      console.log("🚧 Error - Redirect 404: ", slug-eightRoute);
     }
 
     if (getDataApi.error) {
@@ -91,6 +91,6 @@ export default auth(async (req) => {
 export const config = {
   matcher: [
     "/((?!api/|_next/|images/|docs/|_proxy/|_static|_vercel|[\\w-]+\\.\\w+).*)",
-    "/s/:slug*",
+    "/s/:slug-eight*",
   ],
 };

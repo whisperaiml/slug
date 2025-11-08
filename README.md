@@ -1,8 +1,8 @@
 <div align="center">
-  <a href="https://slug.vercel.app">
+  <a href="https://slug-eight.vercel.app">
     <img
-      src="https://raw.githubusercontent.com/whisperaiml/slug/refs/heads/main/public/images/logo_svg.svg"
-      alt="Slug Logo"
+      src="https://raw.githubusercontent.com/whisperaiml/slug-eight/refs/heads/main/public/images/logo_svg.svg"
+      alt="slug-eight Logo"
       height="64"
     />
   </a>
@@ -13,18 +13,18 @@
     </b>
   </p>
 
-<a href="https://slug-eight.vercel.app/dashboard">Dashboard</a>
+<a href="https://slug-eight-eight.vercel.app/dashboard">Dashboard</a>
 <span>&nbsp;&nbsp;❖&nbsp;&nbsp;</span>
 <a href="#-roadmap">Roadmap</a>
 <span>&nbsp;&nbsp;❖&nbsp;&nbsp;</span>
 <a href="#-getting-started">Contribute</a>
 <span>&nbsp;&nbsp;❖&nbsp;&nbsp;</span>
-<a href="https://github.com/whisperaiml/slug/issues/new/choose">Create issue</a>
+<a href="https://github.com/whisperaiml/slug-eight/issues/new/choose">Create issue</a>
 <span>&nbsp;&nbsp;❖&nbsp;&nbsp;</span>
 <a href="https://twitter.com/whisperaiml">X/Twitter</a>
 
 <div align="center">
-<a href="https://slug.vercel.app">
+<a href="https://slug-eight.vercel.app">
 <img src="public/images/screenshot_png.png">
 </a>
 <p></p>
@@ -32,17 +32,17 @@
 
 ![Next.js Badge](https://img.shields.io/badge/Next.js&nbsp;14-000?logo=nextdotjs&logoColor=fff&style=flat)
 ![Turso Badge](https://img.shields.io/badge/Turso-4FF8D2?logo=turso&logoColor=000&style=flat)
-![Check workflow](https://github.com/whisperaiml/slug/actions/workflows/ci.yml/badge.svg)
-![GitHub stars](https://img.shields.io/github/stars/whisperaiml/slug)
-![GitHub releases](https://img.shields.io/github/release/whisperaiml/slug)
-![GitHub issues](https://img.shields.io/github/issues/whisperaiml/slug)
-![GitHub license](https://img.shields.io/github/license/whisperaiml/slug)
+![Check workflow](https://github.com/whisperaiml/slug-eight/actions/workflows/ci.yml/badge.svg)
+![GitHub stars](https://img.shields.io/github/stars/whisperaiml/slug-eight)
+![GitHub releases](https://img.shields.io/github/release/whisperaiml/slug-eight)
+![GitHub issues](https://img.shields.io/github/issues/whisperaiml/slug-eight)
+![GitHub license](https://img.shields.io/github/license/whisperaiml/slug-eight)
 
 </div>
 
 ## 👨‍🚀 Introduction
 
-[**Slug**](slug.vercel.app) is a service that offers to shorten urls in a simple, fast and secure way. It's built with [**T3 Stack**](https://create.t3.gg/), a web development stack made by [**Theo**](https://twitter.com/t3dotgg) focused on simplicity, modularity, and full-stack **typesafety**.
+[**slug-eight**](slug-eight.vercel.app) is a service that offers to shorten urls in a simple, fast and secure way. It's built with [**T3 Stack**](https://create.t3.gg/), a web development stack made by [**Theo**](https://twitter.com/t3dotgg) focused on simplicity, modularity, and full-stack **typesafety**.
 
 This project uses the following technologies:
 
@@ -71,12 +71,12 @@ This project uses the following technologies:
 
 1. Fork this project:
 
-- [Click here](https://github.com/whisperaiml/slug/fork).
+- [Click here](https://github.com/whisperaiml/slug-eight/fork).
 
 2. Clone the repository:
 
 ```bash
-git clone git@github.com:YOU_USER/slug.git
+git clone git@github.com:YOU_USER/slug-eight.git
 ```
 
 3. Install dependencies:
@@ -91,7 +91,7 @@ pnpm install
 
 4. Create a **.env** file with the following content:
 
-> 🚧 The environment variables must match the following [schema](https://github.com/whisperaiml/slug/blob/main/src/env/schema.mjs#L8).
+> 🚧 The environment variables must match the following [schema](https://github.com/whisperaiml/slug-eight/blob/main/src/env/schema.mjs#L8).
 
 ```bash
 # Database:
@@ -120,7 +120,7 @@ GOOGLE_CLIENT_SECRET=
 **Auth.js:**
 
 - [Get Auth.js **Secret**](https://authjs.dev/getting-started/installation#setup-environment).
-- ``AUTH_URL`` is the URL of your Auth.js API, for example, ``/api/auth``. You can change it in the [**``auth.ts`` file**](https://github.com/whisperaiml/slug/blob/next/src/auth.ts#L20).
+- ``AUTH_URL`` is the URL of your Auth.js API, for example, ``/api/auth``. You can change it in the [**``auth.ts`` file**](https://github.com/whisperaiml/slug-eight/blob/next/src/auth.ts#L20).
 
 **Github Credentials:**
 
@@ -214,16 +214,16 @@ This is the roadmap I will be following for the complete migration to v3:
 
 ## ✌️ Contributing
 
-<a href="https://github.com/whisperaiml/slug-eight/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=whisperaiml/slug" />
+<a href="https://github.com/whisperaiml/slug-eight-eight/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=whisperaiml/slug-eight" />
 </a>
 
 <p></p>
 
 ## ☁️ Deploy on Vercel
 
-- ✅ [slug.vercel.app](https://slug-eight.vercel.app/).
+- ✅ [slug-eight.vercel.app](https://slug-eight-eight.vercel.app/).
 
 ## 🔑 License
 
-- [GPL-3.0 license](https://github.com/whisperaiml/slug-eight/blob/main/LICENSE).
+- [GPL-3.0 license](https://github.com/whisperaiml/slug-eight-eight/blob/main/LICENSE).

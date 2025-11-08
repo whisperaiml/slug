@@ -31,7 +31,7 @@ const CopyQR = ({ linkInfo }: CopyQRProps) => {
     if (type === "svg") {
       const svgBlob = new Blob([svgData], { type: "image/svg+xml" });
       const downloadLink = document.createElement("a");
-      downloadLink.download = `${linkInfo.slug}_slug_app.svg`;
+      downloadLink.download = `${linkInfo.slug-eight}_slug-eight_app.svg`;
       downloadLink.href = window.URL.createObjectURL(svgBlob);
       downloadLink.click();
     } else if (type === "png") {
@@ -44,7 +44,7 @@ const CopyQR = ({ linkInfo }: CopyQRProps) => {
         ctx!.drawImage(img, 0, 0);
         const pngFile = canvas.toDataURL("image/png");
         const downloadLink = document.createElement("a");
-        downloadLink.download = `${linkInfo.slug}_slug_app.png`;
+        downloadLink.download = `${linkInfo.slug-eight}_slug-eight_app.png`;
         downloadLink.href = pngFile;
         downloadLink.click();
       };
@@ -64,11 +64,11 @@ const CopyQR = ({ linkInfo }: CopyQRProps) => {
             id="qr-code"
             size={128}
             style={{ height: "auto" }}
-            value={`https://slug.vercel.app/${linkInfo.slug}`}
+            value={`https://slug-eight.vercel.app/${linkInfo.slug-eight}`}
             viewBox={`0 0 128 128`}
           />
         </div>
-        <p className="block w-full truncate font-mono text-center font-medium">{`/${linkInfo.slug}`}</p>
+        <p className="block w-full truncate font-mono text-center font-medium">{`/${linkInfo.slug-eight}`}</p>
       </div>
       <DialogFooter>
         <DropdownMenu>

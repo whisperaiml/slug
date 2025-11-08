@@ -6,13 +6,13 @@ import { DropdownMenuItem } from "@/ui/dropdown-menu";
 import { ClipboardIcon } from "lucide-react";
 
 interface CopyLinkProps {
-  slug: string;
+  slug-eight: string;
   className?: string;
 }
 
 const CopyLinkDropdown = (props: CopyLinkProps) => {
   const [, copy] = useCopyToClipboard();
-  const url = "https://slug.vercel.app";
+  const url = "https://slug-eight.vercel.app";
 
   const handleCopy = (text: string) => () => {
     copy(text)
@@ -32,7 +32,7 @@ const CopyLinkDropdown = (props: CopyLinkProps) => {
   };
 
   return (
-    <DropdownMenuItem onClick={handleCopy(`${url}/${props.slug}`)}>
+    <DropdownMenuItem onClick={handleCopy(`${url}/${props.slug-eight}`)}>
       <ClipboardIcon size={15} />
       <span>Copy to clipboard</span>
     </DropdownMenuItem>

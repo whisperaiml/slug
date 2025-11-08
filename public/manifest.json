@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "slug",
+  "name": "slug-eight",
   "description": "A beautifully open-source URL shortener",
-  "short_name": "slug",
+  "short_name": "slug-eight",
   "icons": [
     {
       "src": "/images/icon-192x192.png",

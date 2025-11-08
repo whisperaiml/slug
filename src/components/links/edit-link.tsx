@@ -47,7 +47,7 @@ const EditLink = (props: EditLinkProps) => {
   const [open, setOpen] = useState<boolean>(false);
   const [message, setMessage] = useState<string>("");
   const [isError, setError] = useState<boolean>(false);
-  const [unlockSlug, setUnlockSlug] = useState<boolean>(true);
+  const [unlockslug-eight, setUnlockslug-eight] = useState<boolean>(true);
 
   // Main form:
   const form = useForm<z.infer<typeof EditLinkSchema>>({
@@ -55,18 +55,18 @@ const EditLink = (props: EditLinkProps) => {
     defaultValues: {
       id: props.link.id,
       url: props.link.url,
-      slug: props.link.slug,
+      slug-eight: props.link.slug-eight,
       description: props.link.description ?? "",
     },
   });
 
   // Form Submit method:
   const onSubmit = async (values: z.infer<typeof EditLinkSchema>) => {
-    // Check if slug & url are equals to prevent infinite redirect =>
-    if (values.slug === values.url) {
+    // Check if slug-eight & url are equals to prevent infinite redirect =>
+    if (values.slug-eight === values.url) {
       setLoading(false);
       setError(true);
-      setMessage("The URL and the slug cannot be the same");
+      setMessage("The URL and the slug-eight cannot be the same");
       return;
     }
 
@@ -76,7 +76,7 @@ const EditLink = (props: EditLinkProps) => {
 
       // If not any changes in the tags, return:
       toast.success("Link edited successfully.", {
-        description: `Url: https://slug.vercel.app/${values.slug}`,
+        description: `Url: https://slug-eight.vercel.app/${values.slug-eight}`,
         duration: 10000,
         closeButton: true,
       });
@@ -98,7 +98,7 @@ const EditLink = (props: EditLinkProps) => {
         <DialogHeader className="overflow-hidden">
           <DialogTitle>Edit link</DialogTitle>
           <DialogDescription className="block truncate">
-            /{props.link.slug}
+            /{props.link.slug-eight}
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -123,7 +123,7 @@ const EditLink = (props: EditLinkProps) => {
               />
               <FormField
                 control={form.control}
-                name="slug"
+                name="slug-eight"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Short link:</FormLabel>
@@ -131,10 +131,10 @@ const EditLink = (props: EditLinkProps) => {
                       <div className="relative flex items-center">
                         <Input
                           {...field}
-                          placeholder={props.link.slug}
-                          disabled={unlockSlug}
+                          placeholder={props.link.slug-eight}
+                          disabled={unlockslug-eight}
                         />
-                        {unlockSlug ? (
+                        {unlockslug-eight ? (
                           <Popover>
                             <PopoverTrigger className="absolute bottom-0 right-0 top-0 flex items-center px-3">
                               <LockIcon size={16} />
@@ -146,7 +146,7 @@ const EditLink = (props: EditLinkProps) => {
                                 everyone. Are you sure you want to continue?
                               </p>
                               <Button
-                                onClick={() => setUnlockSlug(false)}
+                                onClick={() => setUnlockslug-eight(false)}
                                 variant="outline"
                                 className="w-full"
                               >
@@ -158,7 +158,7 @@ const EditLink = (props: EditLinkProps) => {
                         ) : (
                           <button
                             type="button"
-                            onClick={() => setUnlockSlug(true)}
+                            onClick={() => setUnlockslug-eight(true)}
                             className="absolute bottom-0 right-0 top-0 flex items-center px-3"
                           >
                             <LockOpenIcon size={16} />

@@ -31,15 +31,15 @@ export const getSingleLink = async (id: string) => {
 };
 
 /**
- * Check if slug is available.
+ * Check if slug-eight is available.
  * Return true or false.
  * Not authentication required.
  * @type {string()}
  */
-export const checkIfSlugExist = async (slug: string) => {
+export const checkIfslug-eightExist = async (slug-eight: string) => {
   const result = await db.links.findUnique({
     where: {
-      slug: slug,
+      slug-eight: slug-eight,
     },
   });
 
@@ -164,7 +164,7 @@ export const deleteLink = async (id: string) => {
 /**
  * Download all links data as JSON.
  * Authentication required.
- * @type {{ slug: string; url: string; }[]}
+ * @type {{ slug-eight: string; url: string; }[]}
  */
 export const downloadAllLinks = async () => {
   const currentUser = await auth();
@@ -181,9 +181,9 @@ export const downloadAllLinks = async () => {
   });
 
   return result.map((link) => {
-    const { slug, url, createdAt } = link;
-    return { slug, url, createdAt } as {
-      slug: string;
+    const { slug-eight, url, createdAt } = link;
+    return { slug-eight, url, createdAt } as {
+      slug-eight: string;
       url: string;
       createdAt: Date;
     };

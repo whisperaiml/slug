@@ -13,20 +13,20 @@ export interface urlFromServerResult {
 }
 
 export const urlFromServer = async (
-  slug: string,
+  slug-eight: string,
 ): Promise<urlFromServerResult> => {
   try {
     // Get link from server:s
     const getLinkFromServer = await db.links.findUnique({
       where: {
-        slug: slug,
+        slug-eight: slug-eight,
       },
     });
 
     if (!getLinkFromServer) {
       return {
         error: false,
-        message: "🚧 Error (urlFromServer): Slug not found or invalid.",
+        message: "🚧 Error (urlFromServer): slug-eight not found or invalid.",
         redirect404: true,
       };
     }

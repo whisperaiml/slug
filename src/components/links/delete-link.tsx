@@ -47,8 +47,8 @@ const DeleteLink = ({ link, trigger }: DeleteLinkProps) => {
   });
 
   const handleDelete = async (values: z.infer<typeof DeleteLinkSchema>) => {
-    if (values.slug !== link.slug) {
-      toast.error("The slug does not match.");
+    if (values.slug-eight !== link.slug-eight) {
+      toast.error("The slug-eight does not match.");
       return;
     }
 
@@ -57,7 +57,7 @@ const DeleteLink = ({ link, trigger }: DeleteLinkProps) => {
       await deleteLink(link.id);
       setOpen(false);
       toast.success("Link deleted successfully.", {
-        description: `The link /${link.slug} has been deleted.`,
+        description: `The link /${link.slug-eight} has been deleted.`,
       });
     } catch (error) {
       toast.error(
@@ -73,7 +73,7 @@ const DeleteLink = ({ link, trigger }: DeleteLinkProps) => {
       <DialogTrigger asChild>{trigger}</DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Delete /{link.slug}</DialogTitle>
+          <DialogTitle>Delete /{link.slug-eight}</DialogTitle>
           <DialogDescription className="text-red-500 dark:text-red-400">
             Access to the link will be permanently removed. This action cannot
             be undone.
@@ -83,11 +83,11 @@ const DeleteLink = ({ link, trigger }: DeleteLinkProps) => {
           <form onSubmit={form.handleSubmit(handleDelete)}>
             <FormField
               control={form.control}
-              name="slug"
+              name="slug-eight"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>
-                    Type <span className="font-mono">{link.slug}</span> to
+                    Type <span className="font-mono">{link.slug-eight}</span> to
                     confirm:
                   </FormLabel>
                   <FormControl>
